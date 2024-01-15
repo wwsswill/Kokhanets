@@ -1,0 +1,5 @@
+num1 = int(input("Введите первое целое число: "))
+num2 = int(input("Введите второе целое число: "))
+num3 = int(input("Введите третье целое число: "))
+maximum = max(num1, num2, num3)
+print("Максимальное число:", maximum)
