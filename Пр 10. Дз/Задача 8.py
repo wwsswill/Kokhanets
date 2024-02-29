@@ -1,21 +1,12 @@
-def countw(n, max_num):
-    if n == 0:
+def countw(n):
+    if n == 1:
         return 1
-    if n < 0:
-        return 0
-
-    ways = 0
-    for i in range(1, min(max_num, n) + 1):
-        ways += countw(n - i, i)
-
-    return ways
-
-
-def getw(n):
-    return countw(n, n)
+    else:
+        abc = 0
+        for i in range(1, n + 1):
+            abc += countw(n - i)
+        return abc 
 
 
 n = int(input("Введите натуральное число:\n"))
-
-num_ways = getw(n)
-print(f"Количество разложений: {num_ways}")
+print(f"Количество разложений: {countw}")
