@@ -1,0 +1,5 @@
+arr = list(map(int, input("Массив: ").split()))
+max_val = max(arr)
+count_max = arr.count(max_val)
+print(f"Максимальное значение {max_val}")
+print(f"Количество элементов {count_max}")
